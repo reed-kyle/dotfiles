@@ -1,0 +1,15 @@
+# Terminal
+cask "ghostty"
+
+# Editor
+brew "neovim"
+
+
+# Development tools
+brew "fnm"
+
+# System tools
+cask "karabiner-elements"
+
+# Fonts
+cask "font-jetbrains-mono-nerd-font"

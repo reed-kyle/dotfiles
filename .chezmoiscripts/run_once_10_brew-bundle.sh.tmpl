@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+[[ "$(uname -s)" == "Darwin" ]] || exit 0
+
+# Ensure brew is in PATH for Apple Silicon installs
+if [[ -x /opt/homebrew/bin/brew ]]; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+brew bundle --file="$HOME/.Brewfile"
