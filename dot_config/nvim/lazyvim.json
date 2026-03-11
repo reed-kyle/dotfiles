@@ -1,6 +1,16 @@
 {
   "extras": [
-
+    "lazyvim.plugins.extras.coding.yanky",
+    "lazyvim.plugins.extras.editor.overseer",
+    "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.linting.eslint",
+    "lazyvim.plugins.extras.test.core",
+    "lazyvim.plugins.extras.ui.smear-cursor",
+    "lazyvim.plugins.extras.util.chezmoi",
+    "lazyvim.plugins.extras.util.dot",
+    "lazyvim.plugins.extras.util.startuptime"
   ],
   "install_version": 8,
   "news": {
