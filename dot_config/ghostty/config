@@ -1,0 +1,15 @@
+# Ghostty Configuration
+
+# Font
+font-family = "JetBrains Mono Nerd Font"
+font-size = 16
+
+# Theme
+theme = tokyonight
+
+# Window
+window-padding-x = 10
+window-padding-y = 10
+
+# macOS
+macos-option-as-alt = true
