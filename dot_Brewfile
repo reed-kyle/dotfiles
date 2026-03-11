@@ -3,7 +3,11 @@ cask "ghostty"
 
 # Editor
 brew "neovim"
-
+brew "lazygit"
+brew "tree-sitter"
+brew "fzf"
+brew "ripgrep"
+brew "fd"
 
 # Development tools
 brew "fnm"
