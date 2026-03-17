@@ -1,0 +1,23 @@
+# one-sec — commands to intercept
+# One command per line. Optional overrides: pace=N cycles=N min_chars=N verb=V
+
+# coding agents — direct invocation
+claude
+codex
+pi
+copilot
+cursor
+aider
+cody
+
+# blocked packages — intercepted for brew/npm/npx/yarn/pnpm/pip/pipx
+# just the package name; flags like -g, --cask, @latest are handled automatically
+package claude-code
+package @anthropics/claude-code
+package @anthropic-ai/claude-code
+package @openai/codex
+package @mariozerchner/pi-coding-agent
+package aider-chat
+package copilot
+package cursor
+package cody
