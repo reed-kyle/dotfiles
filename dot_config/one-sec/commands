@@ -19,5 +19,7 @@ package @openai/codex
 package @mariozerchner/pi-coding-agent
 package aider-chat
 package copilot
+package copilot-cli
+package @github/copilot
 package cursor
 package cody
