@@ -6,5 +6,5 @@ if [[ -x /opt/homebrew/bin/brew ]]; then
 	eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# Global Go tools — edit this file to add/remove packages
-go install golang.org/x/pkgsite/cmd/pkgsite@latest
+# Cargo tools — edit this file to add/remove packages
+cargo install --git https://github.com/mitsuhiko/idasen-control.git

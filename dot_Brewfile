@@ -12,6 +12,7 @@ brew "fd"
 # Development tools
 brew "fnm"
 brew "go"
+brew "rust"
 
 # System tools
 cask "karabiner-elements"
