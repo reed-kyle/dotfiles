@@ -1,0 +1,3 @@
+# LazyVim auto-generated files - let lazy.nvim manage these
+.config/nvim/lazy-lock.json
+.config/nvim/lazyvim.json
