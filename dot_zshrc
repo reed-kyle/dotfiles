@@ -11,7 +11,7 @@ alias v="nvim"
 export EDITOR="nvim"
 
 # one-sec — mindful pause before distracting terminal apps
-[[ -f ~/.config/one-sec/init.zsh ]] && source ~/.config/one-sec/init.zsh
+# [[ -f ~/.config/one-sec/init.zsh ]] && source ~/.config/one-sec/init.zsh
 
 # Machine-local overrides (API keys, one-off aliases, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
