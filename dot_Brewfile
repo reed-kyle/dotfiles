@@ -14,6 +14,9 @@ brew "fnm"
 brew "go"
 brew "rust"
 
+# Utilities
+brew "tree"
+
 # System tools
 cask "karabiner-elements"
 
