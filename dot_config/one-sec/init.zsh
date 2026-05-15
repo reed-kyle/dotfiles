@@ -12,6 +12,7 @@ _ONESEC_MIN_CHARS=50    # minimum chars the user must type per prompt (prefix ex
 _ONESEC_MIN_ENTROPY=3.0 # minimum Shannon entropy (bits) — typical English ≈ 4.0, mashing ≈ 0–1.5
 _ONESEC_MIN_REAL_WORDS=3 # minimum dictionary words (defeats gibberish that has high entropy)
 _ONESEC_VERB=open       # action verb — override per-command with verb=install etc.
+_ONESEC_STATE_FILE="$HOME/.config/one-sec/disabled" # touch to disable, rm to enable
 
 # ---------------------------------------------------------------------------
 # Breathing animation — full-screen vertical fill, like the one-sec app
@@ -236,6 +237,13 @@ _onesec_input_loop() {
 # Wrapper — pause, prompt, pause, then run
 # ---------------------------------------------------------------------------
 _onesec_wrap() {
+  # bypass when disabled — run the command directly
+  if [[ -f "$_ONESEC_STATE_FILE" ]]; then
+    local cmd="$1"; shift 5
+    command "${cmd%% *}" "$@"
+    return
+  fi
+
   local cmd="$1"
   local pace="${2:-$_ONESEC_PACE}"
   local cycles="${3:-$_ONESEC_CYCLES}"
@@ -382,6 +390,19 @@ _onesec_load() {
       (( ${+functions[$_pm]} )) && continue
       eval "function ${_pm}() { _onesec_check_pkg '${_pm}' \"\$@\" || command ${_pm} \"\$@\"; }"
     done
+  fi
+}
+
+# ---------------------------------------------------------------------------
+# Toggle — enable / disable one-sec from the command line
+# ---------------------------------------------------------------------------
+toggle_one_sec() {
+  if [[ -f "$_ONESEC_STATE_FILE" ]]; then
+    rm -f "$_ONESEC_STATE_FILE"
+    echo "one-sec: enabled ✓"
+  else
+    touch "$_ONESEC_STATE_FILE"
+    echo "one-sec: disabled ✗"
   fi
 }
 
