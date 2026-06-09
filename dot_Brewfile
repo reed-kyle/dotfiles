@@ -14,8 +14,7 @@ brew "tmux"
 
 # Development tools
 brew "fnm"
-brew "go"
-brew "rust"
+brew "rust" # cargo is needed to install idasen-control (see .chezmoiscripts)
 
 # Utilities
 brew "tree"

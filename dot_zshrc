@@ -1,7 +1,4 @@
-# Go
-export PATH="$PATH:$HOME/go/bin"
-
-# Rust
+# Cargo-installed tools (idasen-control)
 export PATH="$PATH:$HOME/.cargo/bin"
 
 # fnm (Node version manager)
@@ -14,9 +11,6 @@ alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
 export EDITOR="nvim"
-
-# one-sec — mindful pause before distracting terminal apps
-# [[ -f ~/.config/one-sec/init.zsh ]] && source ~/.config/one-sec/init.zsh
 
 # Machine-local overrides (API keys, one-off aliases, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
