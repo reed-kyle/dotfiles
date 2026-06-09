@@ -12,9 +12,12 @@ brew "fd"
 # Multiplexer
 brew "tmux"
 
+# Prompt
+brew "starship"
+
 # Development tools
 brew "fnm"
-brew "rust" # cargo is needed to install idasen-control (see .chezmoiscripts)
+brew "rust" # cargo for idasen-control
 
 # Utilities
 brew "tree"
