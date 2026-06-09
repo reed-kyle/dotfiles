@@ -12,6 +12,9 @@ alias vi="nvim"
 alias v="nvim"
 export EDITOR="nvim"
 
+# Pi without the explain-only tutor mode
+alias pi-full='command pi --no-extensions --system-prompt ""'
+
 # Machine-local overrides (API keys, one-off aliases, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
