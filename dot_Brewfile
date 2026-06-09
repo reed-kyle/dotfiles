@@ -9,6 +9,9 @@ brew "fzf"
 brew "ripgrep"
 brew "fd"
 
+# Multiplexer
+brew "tmux"
+
 # Development tools
 brew "fnm"
 brew "go"
@@ -19,6 +22,7 @@ brew "tree"
 
 # System tools
 cask "karabiner-elements"
+cask "rectangle"
 
 # Fonts
 cask "font-jetbrains-mono-nerd-font"
