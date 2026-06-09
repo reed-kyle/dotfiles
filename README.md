@@ -8,7 +8,7 @@ Personal macOS dotfiles managed with chezmoi.
 
 ```sh
 xcode-select --install
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/reed-kyle/dotfiles.git
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply --source ~/dotfiles https://github.com/reed-kyle/dotfiles.git
 ```
 
 On first apply, chezmoi scripts will:
