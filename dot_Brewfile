@@ -11,6 +11,16 @@ brew "fd"
 
 # Multiplexer
 brew "tmux"
+# tokyo-night-tmux theme dependencies (https://github.com/janoamaral/tokyo-night-tmux)
+brew "bash"
+brew "bc"
+brew "coreutils"
+brew "gawk"
+brew "gh"
+brew "glab"
+brew "gnu-sed"
+brew "jq"
+brew "nowplaying-cli"
 
 # Prompt
 brew "starship"
@@ -28,3 +38,6 @@ cask "rectangle"
 
 # Fonts
 cask "font-jetbrains-mono-nerd-font"
+# for tokyo-night-tmux glyphs
+cask "font-monaspace-nerd-font"
+cask "font-noto-sans-symbols-2"
