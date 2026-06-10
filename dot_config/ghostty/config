@@ -5,16 +5,13 @@ font-family = "JetBrains Mono Nerd Font"
 font-size = 16
 
 # Theme
-theme = tokyonight
+theme = TokyoNight Storm
 
 # Window
 window-padding-x = 12
 window-padding-y = 12
 window-padding-balance = true
 macos-titlebar-style = hidden
-
-background-opacity = 0.92
-background-blur-radius = 20
 
 # macOS
 macos-option-as-alt = true
