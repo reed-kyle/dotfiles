@@ -24,5 +24,11 @@ alias pi-full='command pi --no-extensions --system-prompt ""'
 # Machine-local overrides (API keys, one-off aliases, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
+# fzf keybindings (Ctrl-R fuzzy history, Ctrl-T file picker)
+command -v fzf >/dev/null 2>&1 && source <(fzf --zsh)
+
+# zoxide (frecency cd: z <dir>)
+command -v zoxide >/dev/null 2>&1 && eval "$(zoxide init zsh)"
+
 # Starship prompt (init last)
 command -v starship >/dev/null 2>&1 && eval "$(starship init zsh)"

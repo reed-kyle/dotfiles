@@ -28,6 +28,10 @@ brew "starship"
 # Development tools
 brew "fnm"
 brew "just"
+
+# Navigation: frecency cd + smart session manager (sesh uses zoxide + fzf)
+brew "zoxide"
+brew "sesh"
 brew "rust" # cargo for idasen-control
 
 # Utilities
