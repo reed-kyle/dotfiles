@@ -1,6 +1,12 @@
 # Cargo-installed tools (idasen-control)
 export PATH="$PATH:$HOME/.cargo/bin"
 
+# User-installed binaries (just-pick, tmux-task, ...)
+export PATH="$HOME/.local/bin:$PATH"
+
+# Work tooling (bbcx launcher, dev-env picker) — work machine only
+[[ -d "$HOME/Documents/projects/work-tools/bin" ]] && export PATH="$HOME/Documents/projects/work-tools/bin:$PATH"
+
 # fnm (Node version manager)
 if command -v fnm >/dev/null 2>&1; then
   eval "$(fnm env --use-on-cd)"

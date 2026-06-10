@@ -27,6 +27,7 @@ brew "starship"
 
 # Development tools
 brew "fnm"
+brew "just"
 brew "rust" # cargo for idasen-control
 
 # Utilities

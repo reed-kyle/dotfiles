@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# tmux-task <window> <command...>
+# Run a command in the named window of the current tmux session:
+# create the window if missing (preserving cwd), interrupt whatever is
+# running in it otherwise, then switch to it. Outside tmux, just run
+# the command in place.
+set -euo pipefail
+
+win="${1:?usage: tmux-task <window> <command...>}"
+shift
+cmd="$*"
+
+if [ -z "${TMUX:-}" ]; then
+  exec sh -c "$cmd"
+fi
+
+session=$(tmux display-message -p '#S')
+target="$session:$win"
+
+if tmux list-windows -t "$session" -F '#W' | grep -qx "$win"; then
+  tmux send-keys -t "$target" C-c
+else
+  tmux new-window -d -t "$session" -n "$win" -c "$PWD"
+fi
+tmux send-keys -t "$target" "$cmd" Enter
+tmux select-window -t "$target"
