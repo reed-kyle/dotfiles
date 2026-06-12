@@ -44,5 +44,5 @@ cask "rectangle"
 # Fonts
 cask "font-jetbrains-mono-nerd-font"
 # for tokyo-night-tmux glyphs
-cask "font-monaspace-nerd-font"
+cask "font-monaspice-nerd-font"
 cask "font-noto-sans-symbols-2"
